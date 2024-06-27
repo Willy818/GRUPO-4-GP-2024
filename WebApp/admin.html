@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMSystem - Administrador</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="GYMSystem Logo" class="logo">
+        <h1>GYMSystem - Administrador</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Agregar Empleado</h2>
+            <form id="form-agregar-empleado">
+                <label for="empleado-usuario">Usuario:</label>
+                <input type="text" id="empleado-usuario" required>
+                <label for="empleado-contraseña">Contraseña:</label>
+                <input type="password" id="empleado-contraseña" required>
+                <button type="submit">Agregar Empleado</button>
+            </form>
+        </section>
+
+        <section class="events-section">
+            <h2>Eventos Registrados</h2>
+            <ul id="lista-eventos"></ul>
+        </section>
+    </main>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

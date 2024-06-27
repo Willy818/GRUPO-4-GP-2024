@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMSystem - Agenda Electrónica</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="GYMSystem Logo" class="logo">
+        <h1>GYMSystem - Agenda Electrónica</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Agregar Evento</h2>
+            <form id="form-agregar">
+                <label for="fecha-hora">Fecha y Hora:</label>
+                <input type="datetime-local" id="fecha-hora" required>
+                <label for="descripcion">Descripción:</label>
+                <input type="text" id="descripcion" required>
+                <button type="submit">Agregar Evento</button>
+            </form>
+        </section>
+
+        <section class="events-section">
+            <h2>Eventos</h2>
+            <ul id="lista-eventos"></ul>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
