@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMSystem - Empleado</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="../img/gymsystem.png" alt="GYMSystem Logo" class="logo">
+        <h1>GYMSystem - Empleado</h1>
+        <nav>
+            <ul>
+                <li><button type="submit"><a href="../index.html">Inicio</a></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Agregar Evento</h2>
+        <form id="form-agregar">
+            <label for="fecha-hora">Fecha y Hora:</label>
+            <input type="datetime-local" id="fecha-hora" name="fecha-hora" required>
+            
+            <label for="descripcion">Descripción:</label>
+            <input type="text" id="descripcion" name="descripcion" required>
+            
+            <button type="submit">Agregar Evento</button>
+        </form>
+
+        <h2>Eventos</h2>
+        <ul id="lista-eventos"></ul>
+    </main>
+
+    <script src="../js/employee.js"></script>
+</body>
+</html>

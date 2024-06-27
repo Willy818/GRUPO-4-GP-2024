@@ -1,0 +1,172 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #DAF7A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px; /* Añadido para padding en dispositivos móviles */
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el tamaño total */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #c0392b;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    color: #900C3F;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #C70039;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="time"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #FFC300;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #FFF;
+}
+
+button[type="submit"],
+button[type="button"] {
+    padding: 10px;
+    background-color: #FF5733;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: #c0392b;
+    
+}
+
+#admin-key-label,
+#admin-key {
+    display: none;
+}
+
+.event {
+    border: 1px solid #FFC300;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.event .description {
+    color: #900C3F;
+}
+
+.event .date,
+.event .time {
+    color: #C70039;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="time"] {
+        font-size: 0.9em;
+    }
+
+    button[type="submit"],
+    button[type="button"] {
+        font-size: 0.9em;
+    }
+}
+
+#employee-list {
+    margin-top: 20px;
+}
+
+.employee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #FFC300;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.employee .username {
+    color: #900C3F;
+}
+
+.employee .delete-button {
+    background-color: #C70039;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.employee .delete-button:hover {
+    background-color: #900C3F;
+}
+
+nav ul, a {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    text-decoration:none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Gym - Administrador</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="../img/geoGIM.png" alt="Geo Gym Logo" class="logo">
+        <h1>Geo Gym - Administrador</h1>
+        <nav>
+            <ul>
+                <li><button type="submit"><a href="../index.html">Inicio</a></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Gestión de Empleados</h2>
+        <form id="form-add-employee">
+            <label for="employee-username">Usuario:</label>
+            <input type="text" id="employee-username" name="employee-username" required>
+            
+            <label for="employee-password">Contraseña:</label>
+            <input type="password" id="employee-password" name="employee-password" required>
+            
+            <button type="submit">Agregar Empleado</button>
+        </form>
+
+        <h2>Empleados Registrados</h2>
+        <div id="employee-list"></div>
+
+        <h2>Eventos Registrados</h2>
+        <div id="event-list"></div>
+    </main>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>
